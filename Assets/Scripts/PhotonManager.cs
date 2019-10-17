@@ -44,7 +44,7 @@ public class PhotonManager : MonoBehaviour,IPhotonPeerListener
         Debug.Log("111------开始连接----");
         
         peer = new PhotonPeer(this, ConnectionProtocol.Udp);
-        peer.Connect("47.92.119.159:5055","MyGame1");
+        peer.Connect("127.0.0.1:5055","MyGame1");
         connected = false;
     }
 

@@ -54,10 +54,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Request/SyncPlayerRequest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Even/BaseEven.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Even/BaseEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PhotonManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Even/NewPlayerEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Even/SyncPositionEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PhotonManager.cs" />
       </list>
     </option>
   </component>
@@ -111,7 +111,7 @@
       <workItem from="1570776000430" duration="1894000" />
       <workItem from="1571040278765" duration="9951000" />
       <workItem from="1571119393425" duration="4665000" />
-      <workItem from="1571207218574" duration="27841000" />
+      <workItem from="1571207218574" duration="27974000" />
     </task>
     <servers />
   </component>
