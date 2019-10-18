@@ -1,6 +1,6 @@
 OSXUniversal
 PlayerPath?
-/Users/fotoable/Desktop/dess.app
+/Users/fotoable/Desktop/hhhh.app
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 Assets/Scenes/Game.unity
@@ -19,9 +19,11 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+e514cee62577d855e7219a867aaf1f2b Assembly-CSharp.dll:.SyncPositionEvent
 30b9232e90e80b05f3f3422e50964290 Assembly-CSharp.dll:.RegiesterRequet
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 2e7f00960d4168a938ada314109aeed8 Assembly-CSharp.dll:.Player
+f2d060e21eadcae8e650e3404fa1c7fc Assembly-CSharp.dll:.SyncPositionRequest
 e74e83d53cedb350c8c19e1f506419a9 Assembly-CSharp.dll:.ReginsterPanel
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -56,6 +58,7 @@ aa165095bcf0f4d99594ea33df01c81b UnityEngine.UI.dll:UnityEngine.UI.Slider
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 d3c76b14a25eebd3a3323dd43297919c Unity.TextMeshPro.dll:TMPro.TMP_InputField
+58f20061c6707ab4ef886c9e98be89e6 Assembly-CSharp.dll:.SyncPlayerRequest
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 507174d46dacbc5fe45e28485db5dd1e UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -88,6 +91,7 @@ aa165095bcf0f4d99594ea33df01c81b UnityEngine.UI.dll:UnityEngine.UI.Slider
 0fd6822f6177297bd0eb4d83cc7a9030 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+e514cee62577d855e7219a867aaf1f2b Assembly-CSharp.dll:.NewPlayerEvent
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 780e8f682b3221346c034a6712a0fd25 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -164,7 +168,3 @@ d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
-f2d060e21eadcae8e650e3404fa1c7fc Assembly-CSharp.dll:.SyncPositionRequest
-58f20061c6707ab4ef886c9e98be89e6 Assembly-CSharp.dll:.SyncPlayerRequest
-e514cee62577d855e7219a867aaf1f2b Assembly-CSharp.dll:.NewPlayerEvent
-e514cee62577d855e7219a867aaf1f2b Assembly-CSharp.dll:.SyncPositionEvent

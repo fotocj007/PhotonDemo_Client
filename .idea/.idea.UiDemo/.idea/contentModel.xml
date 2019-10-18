@@ -10,6 +10,7 @@
           </e>
           <e p="Even" t="Include">
             <e p="BaseEvent.cs" t="Include" />
+            <e p="ClosePlayerEvent.cs" t="Include" />
             <e p="NewPlayerEvent.cs" t="Include" />
             <e p="SyncPositionEvent.cs" t="Include" />
           </e>

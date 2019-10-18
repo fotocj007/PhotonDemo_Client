@@ -115,7 +115,8 @@ public class PhotonManager : MonoBehaviour,IPhotonPeerListener
     {
         EventCode code = (EventCode)eventData.Code;
         BaseEvent e = DictTool.GetValue(EventDict, code);
-        e.OnEvent(eventData);
+        if(e != null)
+            e.OnEvent(eventData);
     }
 
     public void AddRequest(Request rest)

@@ -34,8 +34,7 @@ public class Player : MonoBehaviour
         syncPlayerRequest.DefaultRequest();
            
        //定时调用某个函数
-        InvokeRepeating("SyncPosition",3,moveOff);
-        
+        InvokeRepeating("SyncPosition",1,moveOff);
     }
     
     //同步位置函数
@@ -43,8 +42,9 @@ public class Player : MonoBehaviour
     {
         if (Vector3.Distance(player.transform.position, lastPos) > 0.1f)
         {
-            lastPos = player.transform.position;
-            syncPosRequest.pos = player.transform.position;
+            var position = player.transform.position;
+            lastPos = position;
+            syncPosRequest.pos = position;
             syncPosRequest.DefaultRequest();
         }
     }
@@ -69,9 +69,20 @@ public class Player : MonoBehaviour
 
     public void OnNewPlayerEvent(string name)
     {
-        GameObject gos = GameObject.Instantiate(playerPrefab);
-        
-        playerDic.Add(name,gos);
+        var isOk = DictTool.GetValue(playerDic, name);
+        if (isOk == null)
+        {
+            GameObject gos = GameObject.Instantiate(playerPrefab);
+            playerDic.Add(name,gos);
+        }
+    }
+
+    //有用户退出时销毁用户,并从管理类中移除
+    public void OnClosePlayer(string name)
+    {
+        GameObject CloseP = DictTool.GetValue(playerDic, name);
+        Destroy(CloseP);
+        playerDic.Remove(name);
     }
 
     public void OnSyncPositionEvent(List<PlayerData> playerDatas)
@@ -79,7 +90,8 @@ public class Player : MonoBehaviour
         foreach (PlayerData pd in playerDatas)
         {
             GameObject go = DictTool.GetValue(playerDic, pd.Username);
-            go.transform.position = new Vector3(){x=pd.Pos.x, y=pd.Pos.y, z=pd.Pos.z};
+            if(go != null)
+                go.transform.position = new Vector3(){x=pd.Pos.x, y=pd.Pos.y, z=pd.Pos.z};
         }
     }
 }
